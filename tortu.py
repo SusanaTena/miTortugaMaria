@@ -1,19 +1,7 @@
 import turtle
 
 miTortugaMaria = turtle.Turtle()
-miTortugaMaria.forward(50)
-miTortugaMaria.left(45)
-miTortugaMaria.forward(50)
-miTortugaMaria.left(45)
-miTortugaMaria.forward(50)
-miTortugaMaria.left(45)
-miTortugaMaria.forward(50)
-miTortugaMaria.left(45)
-miTortugaMaria.forward(50)
-miTortugaMaria.left(45)
-miTortugaMaria.forward(50)
-miTortugaMaria.left(45)
-miTortugaMaria.forward(50)
-miTortugaMaria.left(45)
-miTortugaMaria.forward(50)
-miTortugaMaria.left(45)
+
+for _ in range(0, 4):
+    miTortugaMaria.forward(50)
+    miTortugaMaria.left(90)
