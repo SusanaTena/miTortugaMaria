@@ -1,14 +1,13 @@
 import turtle
 
-miTortugaMaria = turtle.Turtle()
+miTortuga = turtle.Turtle()
 
-respuesta = input("¿Quieres un triángulo?")
+strLados = input("¿Cuantos lados quieres?")
 
-if respuesta == "S" or "s":
-    for _ in range (0,3):
-        miTortugaMaria.forward (100)
-        miTortugaMaria.left (120)
-else:
-    for _ in range(0, 3):
-        miTortugaMaria.forward(100)
-        miTortugaMaria.left(90)
+lados = int(strLados)
+
+for _ in range(0, 360, 15):
+    for _ in range(0, lados):
+        miTortuga.forward(50)
+        miTortuga.left(360/lados)
+    miTortuga.left(15)
